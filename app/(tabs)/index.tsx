@@ -4,8 +4,8 @@ import { Text, View,  StyleSheet } from 'react-native';
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home</Text>
-      <Link href="../profile">Profile</Link>
+      <Text style={styles.text}>Home screen</Text>
+      <Link href="../">Profile</Link>
     </View>
   );
 }
