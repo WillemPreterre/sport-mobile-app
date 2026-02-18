@@ -1,5 +1,5 @@
 import { Stack } from "expo-router";
-// Création des roots ici, comme les écrans de connexion ou d'inscription
+// Création des roots ici
 export default function RootLayout() {
   return (
     <Stack>
