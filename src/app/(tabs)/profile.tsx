@@ -1,9 +1,10 @@
 import { Text, View, StyleSheet, ImageSourcePropType } from "react-native";
 import { Image } from "expo-image";
-import ImageViewer from "@/components/imageViewer";
-import Button from "@/components/button";
+import TextProfile from "@/components/TextProfile";
+import Button from "@/components/Button";
 import * as ImagePicker from "expo-image-picker";
 import { useState } from "react";
+import ImageViewer from "@/components/imageViewer";
 
 // The @ symbol is a custom path alias for importing custom components and other modules instead of relative paths.
 const PlaceholderImage = require("@/../assets/images/splash-icon.png");
@@ -12,6 +13,15 @@ export default function ProfileScreen() {
   const [selectedImage, setSelectedImage] = useState<string | undefined>(
     undefined,
   );
+
+  const profileFakeData = {
+    name: "John Doe",
+    email: "john.doe@example.com",
+    password: "12345678",
+    verifyPassword: "12345678",
+    phone: "0123456789",
+    address: "123 Main St, Anytown, USA",
+  };
 
   const pickImageAsync = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
@@ -46,6 +56,8 @@ export default function ProfileScreen() {
           onPress={() => alert("Using this photo")}
         />
       </View>
+      <TextProfile firstText="Name" data={profileFakeData.name} />
+      <TextProfile firstText="Email" data={profileFakeData.email} />
     </View>
   );
 }

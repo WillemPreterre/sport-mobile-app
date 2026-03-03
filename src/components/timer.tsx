@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import Button from "./button";
+import Button from "./Button";
 import { useRef, useState } from "react";
 
 // type Props = {};
