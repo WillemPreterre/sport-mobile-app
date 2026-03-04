@@ -9,6 +9,7 @@ export default function RootLayout() {
         headerStyle: {
           backgroundColor: "#25292e",
         },
+        headerShown: false,
         headerShadowVisible: false,
         headerTintColor: "#fff",
         tabBarStyle: {
@@ -23,7 +24,7 @@ export default function RootLayout() {
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "home-sharp" : "home-outline"}
-              color={color} 
+              color={color}
               size={24}
             />
           ),
@@ -35,9 +36,7 @@ export default function RootLayout() {
           title: "Profile",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={
-                focused ? "person-circle-sharp" : "person-circle-outline"
-              }
+              name={focused ? "person-circle-sharp" : "person-circle-outline"}
               color={color}
               size={24}
             />

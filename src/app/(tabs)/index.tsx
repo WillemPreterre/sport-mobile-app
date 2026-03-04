@@ -1,6 +1,5 @@
-import Timer from "@/components/timer";
-import { Link } from "expo-router";
-import { Text, View, StyleSheet } from "react-native";
+import Timer from "@/components/Timer";
+import { View, StyleSheet } from "react-native";
 
 export default function Index() {
   return (

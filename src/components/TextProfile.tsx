@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
   },
   firstText: {
     fontSize: 16,
-    fontWeight: "bold",
-    color: "#fff",
+    color: "gray",
+
   },
-  data: { fontSize: 16, color: "#fff" },
+  data: { fontSize: 16, color: "#000" },
 });
